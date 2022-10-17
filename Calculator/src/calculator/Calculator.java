@@ -21,9 +21,11 @@ public class Calculator {
         double numberOne, numberTwo;
         char operator;
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("Please Enter the first number: ");
         numberOne = sc.nextDouble();
+        System.out.println("Please Enter the second number: ");
         numberTwo = sc.nextDouble();
+        System.out.println("Please Enter the operation sign you want to perform: ");
         operator = sc.next().charAt(0);
 
         ChooseOperations co = new ChooseOperations(numberOne, numberTwo);
@@ -35,6 +37,8 @@ public class Calculator {
             co.operations(new Multiplication());
         } else if (operator == '/') {
             co.operations(new Division());
+        }else{
+            System.out.println("Wrong input!");
         }
     }
 }
