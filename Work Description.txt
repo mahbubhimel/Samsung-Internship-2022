@@ -1,0 +1,2 @@
+I have used LDR sensor module and Arduino Uno to read sensor data with plain java.
+I have used JFreeChart and JSerialComm as external jdk's.
